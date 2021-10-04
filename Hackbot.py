@@ -7,6 +7,7 @@ import sys
 from random import randint
 
 from discord import message
+# test
 
 
 class RoleReactClient(discord.Client):
