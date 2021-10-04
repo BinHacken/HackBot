@@ -108,8 +108,9 @@ if os.path.exists(token_path):
     with open(token_path, 'r') as file:
         token = file.read().replace('\n', '')
 else:
-    token = input("Discord Token:")
-    with open(token_path, 'w') as file:
-        file.write(token)
+    #token = input("Discord Token:")
+    #with open(token_path, 'w') as file:
+    #    file.write(token)
+    token = WKsoYQCoAM7Q3Gl6vn1RUy0yVi7K9zvr #here for test purposes. will be changed and removed later.
 
 client.run(token)
