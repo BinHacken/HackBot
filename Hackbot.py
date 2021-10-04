@@ -111,6 +111,6 @@ else:
     #token = input("Discord Token:")
     #with open(token_path, 'w') as file:
     #    file.write(token)
-    token = WKsoYQCoAM7Q3Gl6vn1RUy0yVi7K9zvr #here for test purposes. will be changed and removed later.
+    token = 'WKsoYQCoAM7Q3Gl6vn1RUy0yVi7K9zvr' #here for test purposes. will be changed and removed later.
 
 client.run(token)
