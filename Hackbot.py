@@ -1,4 +1,5 @@
-# https://discord.com/oauth2/authorize?client_id=813038801211228201&scope=bot
+# Invite Link:
+# discord.com/oauth2/authorize?client_id=894589289323692124&scope=bot
 
 import discord
 import os
