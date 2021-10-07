@@ -8,7 +8,6 @@ import sys
 from random import randint
 
 from discord import message
-# test
 
 
 class RoleReactClient(discord.Client):
@@ -19,7 +18,8 @@ class RoleReactClient(discord.Client):
         # ID of message that can be reacted to to add role
         self.role_message_id = 760650447727624263
         self.emoji_to_role = {
-            894607266794336286: 731897726392074351
+            894607266794336286: 731897726392074351,
+            895695507547107329: 537243714205122560
 
             # [ID emoji]: [ID role]
             # ID of role associated with partial emoji object 'greenaxe' -> Hacker
