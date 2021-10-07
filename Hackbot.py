@@ -17,11 +17,11 @@ class RoleReactClient(discord.Client):
         # ID of message that can be reacted to to add role
         self.role_message_id = 760650447727624263
         self.emoji_to_role = {
-            894607266794336286: 731897726392074351,
-            895695507547107329: 537243714205122560
-
             # [ID emoji]: [ID role]
             # ID of role associated with partial emoji object 'greenaxe' -> Hacker
+            894607266794336286: 731897726392074351,
+            # ID of role associated with partial emoji object 'bingener' -> Studi
+            895695507547107329: 537243714205122560
         }
 
     async def on_raw_reaction_add(self, payload):
