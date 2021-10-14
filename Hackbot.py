@@ -98,6 +98,21 @@ intents.members = True
 client = RoleReactClient(intents=intents)
 lastMessage = None
 
+@client.event
+async def on_message(message):
+    # make sure to not get triggered by own messages
+    if message.author == client.user:
+        return
+    # put cntent of message in variable m for following comparisons
+    m =message.content.lower()
+    output = ""
+
+    if m.startswith("help") or m.startswith("/help"):
+        output ="If you need help please contact a Member from the **Support-team** or **Orga-team**"
+    elif m.startswith("hilfe") or m.startswith("/hilfe"):
+        output ="Wenn du Hilfe braucht, kontaktiere bitte ein Mitgleid aus dem **Support-team** oder **Orga-team**"
+    else:   # no matching keywords
+        return 
 
 @client.event
 async def on_ready():
