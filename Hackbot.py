@@ -111,6 +111,8 @@ async def on_message(message):
         output ="If you need help please contact a Member from the **Support-team** or **Orga-team**"
     elif m.startswith("hilfe") or m.startswith("/hilfe"):
         output ="Wenn du Hilfe braucht, kontaktiere bitte ein Mitgleid aus dem **Support-team** oder **Orga-team**"
+    elif m.startswith("easteregg") or m.startswith("/easteregg"):
+        output ="Glückwunsch, du hast ein schlecht verstecktes **Easteregg** gefunden"
     else:   # no matching keywords
         return 
 
