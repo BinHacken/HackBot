@@ -106,13 +106,16 @@ async def on_message(message):
     # put cntent of message in variable m for following comparisons
     m =message.content.lower()
     output = ""
+    # String with content to mention the author of the message
+    PingAuthor ="<@" +str(message.author.id) +">"
 
     if m.startswith("help") or m.startswith("/help"):
         output ="If you need help please contact a Member from the **Support-team** or **Orga-team**"
     elif m.startswith("hilfe") or m.startswith("/hilfe"):
         output ="Wenn du Hilfe braucht, kontaktiere bitte ein Mitgleid aus dem **Support-team** oder **Orga-team**"
     elif m.startswith("easteregg") or m.startswith("/easteregg"):
-        output ="Glückwunsch, du hast ein schlecht verstecktes **Easteregg** gefunden"
+        output ="Glückwunsch" + PingAuthor + ", du hast ein schlecht verstecktes **Easteregg** gefunden"
+        # insert code for deleting the original message of the author here
     else:   # no matching keywords
         return 
 
